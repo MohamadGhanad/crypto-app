@@ -1,51 +1,28 @@
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 40px;
-  font-size: 12px;
-  color: #212529;
-  border-bottom: 1px solid silver;
+.coin {
+    border-bottom: 1px solid #fff;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.container:last-child {
-  border: none;
+.coin img {
+    width: 40px;
+    margin-right: 10px;
 }
 
-.image {
-  width: 30px;
+.coin .name {
+    color: aqua;
+    margin-right: 45px;
+    margin-left: 8px;
 }
 
-.name {
-  width: 140px;
-  font-size: 14xp;
-  margin-left: 15px;
-  text-align: left;
-  font-weight: bold;
-  color: #333333;
+.coin .price {
+    color: gold;
+    margin-right: 15px;
 }
 
-.symbol {
-  text-align: left;
-  width: 100px;
-}
-
-.currentPrice {
-  text-align: left;
-  width: 100px;
-}
-
-.greenPriceChange,
-.redPriceChange {
-  width: 100px;
-  text-align: left;
-  font-weight: bold;
-}
-
-.redPriceChange {
-  color: rgb(255, 38, 38);
-}
-
-.greenPriceChange {
-  color: rgb(0, 204, 0);
+.coin .change {
+    margin-right: 15px;
 }
