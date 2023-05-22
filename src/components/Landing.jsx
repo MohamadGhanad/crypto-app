@@ -20,6 +20,7 @@ const Landing = () => {
         const fetchAPI = async () => {
             const data = await getCoin()
             setCoins(data)
+            console.log();
         }
 
         fetchAPI()
@@ -38,11 +39,7 @@ const Landing = () => {
                         {
                             searchedCoins.map(coin => <Coin
                                 key={coin.id}
-                                name={coin.name}
-                                image={coin.image}
-                                price={coin.current_price}
-                                marketcap={coin.market_cap}
-                                priceChange={coin.price_change_percentage_24h}
+                                data={coin}
                             />)
                         }
                     </div>
