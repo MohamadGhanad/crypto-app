@@ -141,7 +141,62 @@
     transition: all 0.5s ease;
 }
 
-.details {
+.box {
     padding: 10px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.89);
+    width: 500px;
+    height: 400px;
+    box-shadow: 10px 4px 7px 1px rgba(26, 251, 255, 0.3);
+    animation-duration: 0.1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 500px;
+    }
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    padding: 10px;
+    color: black;
+    margin: 5px;
+}
+
+.header .pic {
+    margin-right: 30px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.header .pic img {
+    width: 50px;
+    height: 50px;
+}
+
+.header .name {
+    font-size: 30px;
+}
+
+.line {
+    height: 2px;
+    width: 400px;
+    background-color: black;
+}
+
+.more {
+    color: #242424;
+    margin-left: 15px;
 }
